@@ -33,3 +33,17 @@ output: {fleet_engineers: 3}
 2)  
 input:  {scooters: [11, 15, 13], C: 9, P: 5}  
 output: {fleet_engineers: 7}  
+
+## Getting started
+
+# Checkout the project
+Go in your terminal and type `git clone https://github.com/addicted2defrac/coup-challenge.git`  
+
+# Import pom.xml
+Import `pom.xml` in root folder with your favorite IDE (e.g. Intellij ;))
+
+# Run Spring Boot Application
+Run Spring Boot Application `com.bcgdv.CoupSpringApplication` and open `http://localhost:8080` in your browser
+
+# Send JSON request to coup endpoint
+Use a tool like Postman to run a POST HTTP request to `http://localhost:8080/coup` with a JSON request like `{scooters: [11, 15, 13], C: 9, P: 5}`
