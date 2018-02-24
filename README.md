@@ -20,38 +20,16 @@ As input you are given the []int scooters, int C and int P
 Result should be int - the minimum number of FEs which are required to help the FM
 
 ## Constraints
-[]scooters will contain between 1 and 100 elements.
-Each element in scooters will be between 0 and 1000.
-C will be between 1 and 999.
-P will be between 1 and 1000.
+[]scooters will contain between 1 and 100 elements.  
+Each element in scooters will be between 0 and 1000.  
+C will be between 1 and 999.  
+P will be between 1 and 1000.  
 
 ## Examples
-1)
-input:
-{ 
-
-  scooters: [15, 10],
+1)  
+input:  {scooters: [15, 10], C: 12, P: 5}  
+output: {fleet_engineers: 3}  
   
-  C: 12,
-  
-  P: 5
-}
-expected output:
-{ 
-  fleet_engineers: 3 
-}
-
-2)
-input:
-{ 
-
-  scooters: [11, 15, 13],
-  
-  C: 9,
-  
-  P: 5
-}
-expected output:
-{ 
-  fleet_engineers: 7 
-}
+2)  
+input:  {scooters: [11, 15, 13], C: 9, P: 5}  
+output: {fleet_engineers: 7}  
