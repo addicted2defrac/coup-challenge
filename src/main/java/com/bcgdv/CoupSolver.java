@@ -38,7 +38,7 @@ public final class CoupSolver {
    */
   static abstract class BaseStrategy implements Strategy {
     void validateInput(final int[] scooters, final int managerCap, final int engineerCap) {
-      if (scooters.length < 1 || managerCap > 100)
+      if (scooters.length < 1 || scooters.length > 100)
         throw new IllegalArgumentException("Illegal scooter district amount; expected amount between 1 and 100");
 
       if (managerCap < 1 || managerCap > 999)

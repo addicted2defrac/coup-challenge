@@ -4,6 +4,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -70,6 +71,7 @@ public class CoupSpringApplication {
 
     @RequestMapping(value = "/coup")
     @ResponseBody
+    @ExceptionHandler(IllegalArgumentException.class)
     CoupResponse coup(@RequestBody CoupRequest input) {
       final int engineers =
           CoupSolver.LINEAR_STRATEGY.solve(input.scooters, input.managerCap, input.engineerCap);
